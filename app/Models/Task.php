@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -12,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Task extends Model
 {
+    use HasFactory;
     public const STATUS_NEW = 0;
     public const STATUS_IN_PROGRESS = 1;
     public const STATUS_DONE = 2;
